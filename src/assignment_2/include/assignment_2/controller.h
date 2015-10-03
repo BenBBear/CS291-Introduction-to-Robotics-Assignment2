@@ -24,7 +24,8 @@ static float TICK = 0.1;
 #define RIGHT(x) right(vel,x);
 #define NO_PEN() no_pen(pen);
 #define STYLE_PEN() set_pen(pen, 0, 0, 0, 20);
-
+#define PEN() set_pen(pen, 0, 0, 0, 20);
+#define TURN_AROUND() left(vel,30);
 
 void tick(){
     ros::spinOnce();
